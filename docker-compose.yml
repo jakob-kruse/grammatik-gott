@@ -1,0 +1,10 @@
+services:
+  app:
+    build:
+      context: .
+
+  languagetool:
+    image: erikvl87/languagetool:latest
+    container_name: languagetool
+    ports:
+      - "8010:8010"
